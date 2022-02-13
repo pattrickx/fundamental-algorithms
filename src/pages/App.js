@@ -1,4 +1,5 @@
 import PrimeCard from '../components/PrimeCard';
+import SumCard from '../components/SumCard';
 import '../styles/App.css';
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <div className="App">
       
       <PrimeCard/>
-      <PrimeCard/>
+      <SumCard/>
       <PrimeCard/>
       <PrimeCard/>
       <PrimeCard/>
