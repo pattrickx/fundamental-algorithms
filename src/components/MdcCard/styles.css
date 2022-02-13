@@ -1,0 +1,48 @@
+.container{
+    width: 500px;
+    height: 300px;
+    background: #35354c;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none ;
+    /* Flex-wrap:wrap; */
+    word-break:break-all;
+}
+.inputContainer{
+    display: flex;
+    align-items:center;
+    gap: 1rem;
+}
+.inputContainer input{
+
+}
+.inputContainer button{
+    cursor: pointer;
+}
+.outputContainer{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center; 
+    justify-content: space-between;
+    /* gap:4rem; */
+    /* justify-self: flex-end; */
+}
+.inputNumbersMdc{
+    margin-top: 2rem;
+    height: 4rem;
+    overflow-y: scroll;
+    /* overflow-y: hidden; */
+}
+.inputNumbersMdc::-webkit-scrollbar {
+    display: none;
+}
+.resultMdc{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
