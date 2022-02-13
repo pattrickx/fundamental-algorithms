@@ -29,7 +29,7 @@ function SumCard() {
         </div>
         <div className='outputContainer'>
             <label className='inputNumbers'>{inputNumbers}</label>
-            <label className='result'>{resultMessenger}</label>
+            <label className='resultSum'>{resultMessenger}</label>
         </div>
     </div>
     );

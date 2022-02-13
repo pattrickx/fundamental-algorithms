@@ -1,3 +1,4 @@
+import FibonacciCard from '../components/FibonacciCard';
 import PrimeCard from '../components/PrimeCard';
 import SumCard from '../components/SumCard';
 import '../styles/App.css';
@@ -8,7 +9,7 @@ function App() {
       
       <PrimeCard/>
       <SumCard/>
-      <PrimeCard/>
+      <FibonacciCard/>
       <PrimeCard/>
       <PrimeCard/>
       <PrimeCard/>
