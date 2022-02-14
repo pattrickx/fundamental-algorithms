@@ -1,0 +1,14 @@
+.container{
+    width: 500px;
+    height: 300px;
+    background: #35354c;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none ;
+    /* Flex-wrap:wrap; */
+    word-break:break-all;
+}
