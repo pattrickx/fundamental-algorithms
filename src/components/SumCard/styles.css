@@ -46,3 +46,6 @@
 .clear{
     background: linear-gradient(to bottom right, #8b0707, #ff5a5a);
 }
+.clear:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 71, 0.5), .125rem .125rem 1rem rgba(255, 90, 90, 0.5);
+    }
