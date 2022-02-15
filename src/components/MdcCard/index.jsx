@@ -52,7 +52,7 @@ function MdcCard() {
                 <button onClick={()=>handleAdd()}>
                     ADD
                 </button>
-                <button onClick={()=>Clear()}>
+                <button className='clear' onClick={()=>Clear()}>
                     Clear
                 </button>
             </div>

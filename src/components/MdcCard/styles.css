@@ -46,3 +46,6 @@
     font-size: 2rem;
     font-weight: 500;
 }
+.clear{
+    background: linear-gradient(to bottom right, #8b0707, #ff5a5a);
+}

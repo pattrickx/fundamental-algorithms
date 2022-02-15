@@ -11,3 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* button{
+  width: 100px;
+  padding: .4rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  transition: 400ms;
+}
+button:hover{
+  transform: scale(1.10);
+} */
+input {
+  padding: 3px;
+  box-shadow: 2px 2px 2px grey;
+  font-size: 14px;
+  font-weight: 600;
+  /* width: 300px; */
+}
+
+/* CSS */
+button{
+  background: linear-gradient(to bottom right, #45078b, #785aff);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  /* font-size: 16px; */
+  /* font-weight: 500; */
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
