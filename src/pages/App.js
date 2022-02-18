@@ -1,3 +1,4 @@
+import CountCard from '../components/CountCard';
 import FibonacciCard from '../components/FibonacciCard';
 import MdcCard from '../components/MdcCard';
 import PrimeCard from '../components/PrimeCard';
@@ -14,7 +15,7 @@ function App() {
       <FibonacciCard/>
       <MdcCard/>
       <QuicksortCard/>
-      <PrimeCard/>
+      <CountCard/>
     </div>
   );
 }
