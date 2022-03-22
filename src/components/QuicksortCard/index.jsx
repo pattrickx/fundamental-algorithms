@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-
-// import { Container } from './styles';
+import './styles.css';
 
 function QuicksortCard() {
     const [inputString,setInputString]= useState("")
