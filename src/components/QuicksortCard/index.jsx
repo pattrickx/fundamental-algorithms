@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { quicksortFunc } from '../../functions/allFunctions';
 import './styles.css';
 
 function QuicksortCard() {
@@ -12,26 +13,8 @@ function QuicksortCard() {
         return listNumber
     }
 
-
-    function Quicksort(listNumber){
-        
-        if (listNumber.length <=1)
-            return listNumber
-        let pivot= listNumber[0]
-        let left = []
-        let center = []
-        let rigth = []
-        for( let n of listNumber ){
-            if(n<pivot) left.push(n)
-            if(n>pivot) rigth.push(n)
-            if(n==pivot) center.push(n)
-        }
-
-        return[...Quicksort(left),...center,...Quicksort(rigth)]
-    }
     function handleClick(){
-
-        setOutputArray(Quicksort(getList()).join(', '))
+        setOutputArray(quicksortFunc(getList()).join(', '))
     }
     return (
         <div className="container">

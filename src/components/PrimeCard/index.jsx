@@ -1,22 +1,13 @@
 import React, { useState } from 'react';
+import { primeFunc } from '../../functions/allFunctions';
 import "./styles.css";
 
 function PrimeCard() {
   const [number,setNumber]= useState(null)
   const [resultMessenger,setResultMessenger]= useState("")
-
-  function Prime(){
-    
-    for(let i=2; i<number ; i++)
-      if(number%i===0)
-        return false
-    
-    return number>1
-
-  }
   
   function handleClick(){
-    const IsPrime = Prime()
+    const IsPrime = primeFunc(number)
     setResultMessenger(IsPrime?"Is Prime":"Is Not Prime")
   }
 

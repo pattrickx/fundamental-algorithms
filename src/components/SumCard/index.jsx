@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { sunFunc } from '../../functions/allFunctions';
 import "./styles.css"
 // import { Container } from './styles';
 
@@ -7,7 +8,7 @@ function SumCard() {
     const [resultMessenger,setResultMessenger]= useState(null)
     const [inputNumbers,setInputNumbers] = useState("")
     function Sum(){
-        setResultMessenger(resultMessenger?Number(resultMessenger)+Number(number):number)
+        setResultMessenger(sunFunc(Number(resultMessenger),Number(number)))
         setInputNumbers(inputNumbers?inputNumbers+"+ "+number:number)
         
     }

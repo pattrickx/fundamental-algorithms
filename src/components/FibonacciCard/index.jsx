@@ -1,21 +1,13 @@
 import React, { useState } from 'react';
+import { fibonacciFunc } from '../../functions/allFunctions';
 import './styles.css';
 
 function FibonacciCard() {
     const [number,setNumber]= useState(0)
     const [resultMessenger,setResultMessenger]= useState("")
     function Fibonacci(){
-        let previous_1=1
-        let previous_2=-1
-        let list_messenger=""
-        for(let i=0;i<number;i++){
-            let result_sum = previous_1+previous_2
-            list_messenger += list_messenger?", "+result_sum:result_sum
-            previous_2 = previous_1
-            previous_1 = result_sum
-            
-        }
-        setResultMessenger(list_messenger)
+        
+        setResultMessenger(fibonacciFunc(number))
     }
     return  (
     <div className="container">

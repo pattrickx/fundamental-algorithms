@@ -1,5 +1,6 @@
 import { clear } from '@testing-library/user-event/dist/clear';
 import React, { useEffect, useState } from 'react';
+import { mdcFunc } from '../../functions/allFunctions';
 
 import './styles.css';
 
@@ -8,30 +9,10 @@ function MdcCard() {
     const [numbers,setNumbers]= useState([])
     const [inputNumbers,setInputNumbers] = useState("")
     const [resultMessenger,setResultMessenger]= useState(null)
-    function Mdc(){
 
-        let minNumber = numbers.sort((a,b)=>a-b)[0]
-        // console.log(minNumber)
-        for(let i=minNumber;i>0;i--){
-
-            let finish=true
-            for(let j = 0;j<numbers.length;j++){
-                if(numbers[j]%i !== 0){
-                    finish=false
-                    break                  
-                }
-            }
-            if(finish){
-                setResultMessenger(i)
-                break
-            }
-            
-        }
-
-    }
     useEffect(()=>{
         if(numbers.length>0)
-            Mdc()
+            setResultMessenger(mdcFunc(numbers))
     },[numbers])
 
     function handleAdd(){
