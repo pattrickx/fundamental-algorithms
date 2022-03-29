@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { contFunc } from '../../functions/allFunctions';
 
 import './styles.css';
 
@@ -9,7 +10,7 @@ function CountCard() {
 
     function Count(){
         setInputNumbers(inputNumbers?inputNumbers+", "+number:number)
-        if (Number(number)>5){
+        if (contFunc(Number(number))){
             setResultMessenger(resultMessenger+1)
         }
 
