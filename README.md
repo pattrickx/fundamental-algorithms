@@ -7,6 +7,7 @@ Esse algoritimo esta definido para fazer contagem de numeros maiores que 5, ao a
 <div align="center">
 <img src="https://user-images.githubusercontent.com/32752004/160951687-a7b3992e-d1b6-449c-b8b1-a6bdb47c0741.png">
 </div>
+
 ### Codigo
 
 ``` javascript
@@ -18,7 +19,7 @@ export const contFunc=(number)=>{
 ```
 ## Algoritmo de Fibonacci
 
-no card do algoritmo so é preciso adicionar o numero de digitos da sequencia que se deseja ver e clicar em run, assim sera gerado o resultado como o a seguir 
+Para esse card do algoritmo so é preciso adicionar o numero de digitos da sequencia que se deseja ver e clicar em run, assim sera gerado o resultado como o a seguir 
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/32752004/160951952-2359e331-e94d-4c1c-823b-8840dcb2fa67.png">
@@ -42,7 +43,7 @@ export const fibonacciFunc=(number)=>{
 ```
 ## Algortimo de MDC
 
-Nesse card podesse adicionar n numeros e se tem como resultado o maximo divisor comum para todos.
+Nesse card pode ser adicionar "n" numeros e se tem como resultado o maximo divisor comum para todos.
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/32752004/160952914-0baaae70-6279-4aa0-a051-c98b9563e4a6.png">
@@ -73,6 +74,7 @@ export const mdcFunc=(numbers)=>{
 ```
 
 ## Algoritimo de identificação de Numeros Primos
+Nesse card é passado um numero inteiro qualquer e então é retornado se o valor é um numero primo ou não 
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/32752004/160952718-061dc7ae-0f59-4cd6-918f-bf5a265dd095.png">
@@ -93,6 +95,8 @@ export const primeFunc=(number)=>{
 ```
 
 ## Algoritimo de Quicksort
+
+Nesse card se deve passar uma lista de numeros separados por virgola os quais seram ordenados do menor para o maior como mostrado a seguir.
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/32752004/160952619-107a9f0a-5cdd-4b8d-9bb3-16ea55eca4e1.png">
@@ -118,6 +122,9 @@ export const quicksortFunc=(listNumber)=>{
 }
 ```
 ## Algoritimo de soma
+
+Nesse card se deve adicionar um numero de cada vez com o add esses valores vão ser somados como mostrado a baixo, clear limpa os numeros ja digitados.
+
 <div align="center">
 <img src="https://user-images.githubusercontent.com/32752004/160952521-d40f9def-9f82-4ef3-99a7-a01528995905.png">
 </div>
