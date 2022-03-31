@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Algoritimos fundamentais cadeira de Ambiente de desenvolvimento de Software.
+Front end para acesso aos algoritimos esta rodando na Vercel no [link](https://fundamental-algorithms.vercel.app/) 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Algoritimo de Contagem
+Esse algoritimo esta definido para fazer contagem de numeros maiores que 5, ao adicionar um valor e clicar no botão ADD sera verificado se esse valor é maior que o limiar e o acrecentara a contagem, exemblo a baixo, ao clicar em clear a lista de valores sera resetada
 
-## Available Scripts
+<div align="center">
+<img src="https://user-images.githubusercontent.com/32752004/160951687-a7b3992e-d1b6-449c-b8b1-a6bdb47c0741.png">
+</div>
+### Codigo
 
-In the project directory, you can run:
+``` javascript
+export const contFunc=(number)=>{
+    if(number>5) 
+        return true
+    return false 
+}
+```
+## Algoritmo de Fibonacci
 
-### `npm start`
+no card do algoritmo so é preciso adicionar o numero de digitos da sequencia que se deseja ver e clicar em run, assim sera gerado o resultado como o a seguir 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div align="center">
+<img src="https://user-images.githubusercontent.com/32752004/160951952-2359e331-e94d-4c1c-823b-8840dcb2fa67.png">
+</div>
+### Codigo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+``` javascript
+```
+## Algortimo de MDC
+### Codigo
 
-### `npm test`
+``` javascript
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Algoritimo de identificação de Numeros Primos
+### Codigo
 
-### `npm run build`
+``` javascript
+```### Codigo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+``` javascript
+```
+## Algoritimo de Quicksort
+### Codigo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+``` javascript
+```
+## Algoritimo de soma
+### Codigo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+``` javascript
+```
