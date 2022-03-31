@@ -1,5 +1,5 @@
 # Algoritimos fundamentais cadeira de Ambiente de desenvolvimento de Software.
-Front end para acesso aos algoritimos esta rodando na Vercel no [link](https://fundamental-algorithms.vercel.app/) 
+Front-end para acesso aos algoritimos esta rodando na Vercel no [link](https://fundamental-algorithms.vercel.app/) 
 
 ## Algoritimo de Contagem
 Esse algoritimo esta definido para fazer contagem de numeros maiores que 5, ao adicionar um valor e clicar no botão ADD sera verificado se esse valor é maior que o limiar e o acrecentara a contagem, exemblo a baixo, ao clicar em clear a lista de valores sera resetada
