@@ -37,7 +37,7 @@ function MdcCard() {
     function handleAdd(){
         let newList= [...numbers,Number(number)]
         setNumbers(newList)
-        setInputNumbers(inputNumbers?inputNumbers+"+ "+number:number)
+        setInputNumbers(inputNumbers?inputNumbers+" "+number:number)
     }
     function Clear(){
         setNumbers([])
