@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+# Algoritimos fundamentais cadeira de Ambiente de desenvolvimento de Software.
+Front-end para acesso aos algoritimos esta rodando na Vercel no [link](https://fundamental-algorithms.vercel.app/) 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Algoritimo de Contagem
+Esse algoritimo esta definido para fazer contagem de numeros maiores que 5, ao adicionar um valor e clicar no botão ADD sera verificado se esse valor é maior que o limiar e o acrecentara a contagem, exemblo a baixo, ao clicar em clear a lista de valores sera resetada
 
-## Available Scripts
+<div align="center">
+<img src="https://user-images.githubusercontent.com/32752004/160951687-a7b3992e-d1b6-449c-b8b1-a6bdb47c0741.png">
+</div>
 
-In the project directory, you can run:
+### Codigo
 
-### `npm start`
+``` javascript
+export const contFunc=(number)=>{
+    if(number>5) 
+        return true
+    return false 
+}
+```
+## Algoritmo de Fibonacci
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Para esse card do algoritmo so é preciso adicionar o numero de digitos da sequencia que se deseja ver e clicar em run, assim sera gerado o resultado como o a seguir 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div align="center">
+<img src="https://user-images.githubusercontent.com/32752004/160951952-2359e331-e94d-4c1c-823b-8840dcb2fa67.png">
+</div>
 
-### `npm test`
+### Codigo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+``` javascript
+export const fibonacciFunc=(number)=>{
+    let previous_1=1
+    let previous_2=-1
+    let list_messenger=""
+    for(let i=0;i<number;i++){
+        let result_sum = previous_1+previous_2
+        list_messenger += list_messenger?", "+result_sum:result_sum
+        previous_2 = previous_1
+        previous_1 = result_sum
+    }
+    return list_messenger
+}
+```
+## Algortimo de MDC
 
-### `npm run build`
+Nesse card pode ser adicionar "n" numeros e se tem como resultado o maximo divisor comum para todos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<div align="center">
+<img src="https://user-images.githubusercontent.com/32752004/160952914-0baaae70-6279-4aa0-a051-c98b9563e4a6.png">
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Codigo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+``` javascript
 
-### `npm run eject`
+export const mdcFunc=(numbers)=>{
+    let minNumber = numbers.sort((a,b)=>a-b)[0]
+        // console.log(minNumber)
+    for(let i=minNumber;i>0;i--){
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+        let finish=true
+        for(let j = 0;j<numbers.length;j++){
+            if(numbers[j]%i !== 0){
+                finish=false
+                break                  
+            }
+        }
+        if(finish){
+            return i
+        }
+        
+    }
+}
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Algoritimo de identificação de Numeros Primos
+Nesse card é passado um numero inteiro qualquer e então é retornado se o valor é um numero primo ou não 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<div align="center">
+<img src="https://user-images.githubusercontent.com/32752004/160952718-061dc7ae-0f59-4cd6-918f-bf5a265dd095.png">
+<img src="https://user-images.githubusercontent.com/32752004/160952777-6e408f40-96b6-4399-8835-ff6cf9022693.png">
+</div>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Codigo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+``` javascript
+export const primeFunc=(number)=>{
+    for(let i=2; i<number ; i++)
+        if(number%i===0)
+            return false
+    
+    return number>1
+}
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Algoritimo de Quicksort
 
-### Code Splitting
+Nesse card se deve passar uma lista de numeros separados por virgola os quais seram ordenados do menor para o maior como mostrado a seguir.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<div align="center">
+<img src="https://user-images.githubusercontent.com/32752004/160952619-107a9f0a-5cdd-4b8d-9bb3-16ea55eca4e1.png">
+</div>
 
-### Analyzing the Bundle Size
+### Codigo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+``` javascript
+export const quicksortFunc=(listNumber)=>{
+    if (listNumber.length <=1)
+        return listNumber
+    let pivot= listNumber[0]
+    let left = []
+    let center = []
+    let rigth = []
+    for( let n of listNumber ){
+        if(n<pivot) left.push(n)
+        if(n>pivot) rigth.push(n)
+        if(n==pivot) center.push(n)
+    }
 
-### Making a Progressive Web App
+    return[...quicksortFunc(left),...center,...quicksortFunc(rigth)]
+}
+```
+## Algoritimo de soma
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Nesse card se deve adicionar um numero de cada vez com o add esses valores vão ser somados como mostrado a baixo, clear limpa os numeros ja digitados.
 
-### Advanced Configuration
+<div align="center">
+<img src="https://user-images.githubusercontent.com/32752004/160952521-d40f9def-9f82-4ef3-99a7-a01528995905.png">
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Codigo
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+``` javascript
+export const sunFunc=(n1,n2)=>{
+    return n1+n2
+}
+```
