@@ -136,3 +136,12 @@ export const sunFunc=(n1,n2)=>{
     return n1+n2
 }
 ```
+
+## Testes
+para rodar basta:
+``` 
+npm test
+```
+exemplo de resultado:
+
+![image](https://user-images.githubusercontent.com/32752004/170402689-8e2ba976-9576-41e5-9000-b00cf20fe318.png)
