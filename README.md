@@ -140,6 +140,7 @@ export const sunFunc=(n1,n2)=>{
 ## Testes
 para rodar basta:
 ``` 
+npm install
 npm test
 ```
 exemplo de resultado:
